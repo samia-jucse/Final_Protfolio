@@ -3,7 +3,7 @@ import React from 'react';
 function NavBar({ setActiveSection, activeSection }) {
   const handleNavClick = (section) => {
     setActiveSection(section);
-    // Prevent default anchor behavior
+    // Update the browser's URL to reflect the current section without reloading
     window.history.pushState({}, '', `#${section}`);
   };
 
@@ -12,79 +12,52 @@ function NavBar({ setActiveSection, activeSection }) {
       <div>
         <ul className="nav-links">
           <li>
-            <a
-              href="#"
-              onClick={(e) => {
-                e.preventDefault();
-                handleNavClick('profile');
-              }}
+            <button
+              onClick={() => handleNavClick('profile')}
               className={activeSection === 'profile' ? 'active' : ''}
             >
               Profile
-            </a>
+            </button>
           </li>
           <li>
-            <a
-              href="#"
-              onClick={(e) => {
-                e.preventDefault();
-                handleNavClick('skills');
-              }}
+            <button
+              onClick={() => handleNavClick('skills')}
               className={activeSection === 'skills' ? 'active' : ''}
             >
               Skills
-            </a>
+            </button>
           </li>
           <li>
-            <a
-              href="#"
-              onClick={(e) => {
-                e.preventDefault();
-                handleNavClick('experience');
-              }}
+            <button
+              onClick={() => handleNavClick('experience')}
               className={activeSection === 'experience' ? 'active' : ''}
             >
               Experience
-            </a>
+            </button>
           </li>
-
           <li>
-            <a
-              href="#"
-              onClick={(e) => {
-                e.preventDefault();
-                handleNavClick('education');
-              }}
+            <button
+              onClick={() => handleNavClick('education')}
               className={activeSection === 'education' ? 'active' : ''}
             >
               Education
-            </a>
+            </button>
           </li>
-
-        
           <li>
-            <a
-              href="#"
-              onClick={(e) => {
-                e.preventDefault();
-                handleNavClick('achievements');
-              }}
+            <button
+              onClick={() => handleNavClick('achievements')}
               className={activeSection === 'achievements' ? 'active' : ''}
             >
               Achievements
-            </a>
+            </button>
           </li>
           <li>
-            <a
-              href="#"
-              onClick={(e) => {
-                e.preventDefault();
-                handleNavClick('projects');
-              }}
+            <button
+              onClick={() => handleNavClick('projects')}
               className={activeSection === 'projects' ? 'active' : ''}
             >
               Projects
-            </a>
+            </button>
           </li>
         </ul>
       </div>
@@ -92,4 +65,4 @@ function NavBar({ setActiveSection, activeSection }) {
   );
 }
 
-export default NavBar;  
+export default NavBar;
