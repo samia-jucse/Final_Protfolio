@@ -15,7 +15,7 @@ function Profile() {
         <div className="profile-box">
           {/* Profile Picture */}
           <div className="section__pic-container">
-            <img src={profileImg} alt="Samia Alam's profile picture" />
+            <img src={profileImg} alt="profile" />
           </div>
 
           {/* Profile Details */}
