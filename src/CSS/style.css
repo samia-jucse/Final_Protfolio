@@ -41,11 +41,70 @@ a:hover {
   font-size: 2rem;
   color: #07b181;
 }
-.button {
+.desktop-nav {
+  background-color: #333;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+}
+/* Profile.css or NavBar.css */
+#desktop-nav {
+  background-color: #333;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  display: inline-block;
+}
+
+.nav-links button {
   background: none;
   border: none;
-  color: inherit;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
   cursor: pointer;
-  text-decoration: underline;
-  font: inherit;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  transition: color 0.3s, background-color 0.3s;
+  border-radius: 5px;
+}
+
+.title-achievement {
+  background-color: #f7e1e1; /* Light grey background */
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Longer shadow */
+  margin: 0 0 2rem 0; /* Set top margin to 0 and bottom margin to 2rem */
+}
+
+.nav-links .active {
+  background-color: #e8dccb;
+  color: #333;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  #desktop-nav {
+    flex-direction: column;
+  }
+  
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links li {
+    margin-bottom: 0.5rem;
+  }
 }
