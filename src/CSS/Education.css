@@ -1,0 +1,13 @@
+.education-category-box {
+  padding: 2rem;
+  border-radius: 18px;
+  box-shadow: 0 24px 32px rgba(104, 145, 143, 0.2); /* Increased shadow spread and opacity */
+  margin-bottom: 2rem;
+}
+.title-container {
+  background-color: #f7e1e1; /* Light grey background */
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Longer shadow */
+  margin: 0 0 2rem 0; /* Set top margin to 0 and bottom margin to 2rem */
+}

@@ -1,0 +1,186 @@
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+#projects {
+  padding: 10px 20px;
+}
+
+.title-project {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #decbcb;
+  text-align: center;
+  margin-top: 0;
+  padding-bottom: 1;
+  padding-top: 0;
+}
+
+.project_container {
+  display: flex;
+  align-items: center;
+  height: 400px;
+  margin-left: 90px;
+  width: 70%;
+  background-color: #f5f5f5;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; 
+  animation: slideInFromLeft 0.6s ease-out; /* Apply the slide-in animation */
+}
+
+.tools {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Use flexbox for alignment */
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  gap: 20px; /* Space between buttons */
+  justify-content: center; /* Center items horizontally */
+}
+
+/* Ensure btn-container is a flex container and items stack vertically */
+.btn-container {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  gap: 20px; /* Space between the two button groups */
+  margin-top: 20px;
+}
+
+.tools-container {
+  display: flex;
+  justify-content: center; /* Center the tools horizontally */
+}
+
+.tools {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 10px; /* Space between buttons */
+}
+
+.tools button {
+  background-color: #43e275; /* Blue background color */
+  color: #0e0b0b; /* White text color */
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px; /* Padding inside the button */
+  font-size: 1rem; /* Font size of the button text */
+  cursor: default; /* Default cursor to indicate non-clickable */
+  text-align: center;
+
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+.tools button:hover {
+  background-color: #0056b3;
+}
+
+.link-button {
+  display: flex;
+  justify-content: center; /* Center the buttons horizontally */
+  gap: 20px; /* Space between the buttons */
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  color: #fff; /* White text color */
+  cursor: pointer;
+  background-color: #6f96bf;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+.project-btn {
+  background-color: #5a44e5; 
+}
+
+.project-btn:hover {
+  background-color: #1ba44d; /* Darker green on hover */
+}
+
+
+.project-img {
+  width: 50%; 
+  height: 100%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.project-img img {
+  width: 100%; 
+  height: 100%;
+  object-fit: cover; 
+  border-radius: 8px; 
+  transition: transform 0.3s ease; 
+}
+
+.project-img:hover img {
+  transform: scale(1.05); 
+}
+
+.project-description {
+  width: 50%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  color: #333;
+}
+
+.project-description h1 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.project-description p {
+  font-size: 1rem;
+  color: #666; 
+  margin: 5px 0;
+}
+.btn-container {
+  display: flex;
+  gap: 20px;
+  height: 40px;
+  margin-top: 20px;
+}
+
+.link-button {
+  display: flex; /* Ensure buttons are in a row */
+  gap: 20px; /* Gap between buttons */
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  color: #fff; /* Make sure text color contrasts with button background */
+  cursor: pointer;
+  background-color: #6f96bf;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #4a7ab8; /* Slightly darker shade on hover */
+  transform: translateY(-2px); /* Subtle lift effect on hover */
+}
+
+.project-btn {
+  background-color: #cfb912; /* Color for project buttons */
+}
+
+.project-btn:hover {
+  background-color: #1ba44d; /* Darker color on hover */
+}

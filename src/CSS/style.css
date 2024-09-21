@@ -1,0 +1,43 @@
+/* DESKTOP NAV */
+
+body{
+  background-color:rgb(37, 120, 113);
+}
+nav,
+.nav-links {
+  display: flex;
+}
+
+nav {
+  justify-content: space-around;
+  align-items: center;
+  height: 10vh;
+  background-color: #121717; /* Background color */
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2); /* Add box shadow */
+  border-radius: 8px; /* Slightly rounded corners */
+  padding: 0 2rem; /* Add padding inside the navbar */
+}
+
+
+.nav-links {
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+a {
+  color: rgb(110 231 183);
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(209 250 229);
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: rgb(88, 33, 33);
+}
+
+.logo {
+  font-size: 2rem;
+  color: #07b181;
+}
