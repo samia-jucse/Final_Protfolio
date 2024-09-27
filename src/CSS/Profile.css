@@ -16,14 +16,15 @@
 /* Profile Box 1 (Profile Image and Info) */
 .profile-box {
   flex: 1;
-  border-radius: 80px 10px 80px 10px;
+  
   min-width: 250px;
   max-width: 400px;
   height: 510px;
   padding: 20px;
-  background-color: #157881;
+  background-color: #25686f;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   text-align: center;
+  border-radius: 100px 10px 100px;
 }
 
 /* Profile Picture */
@@ -38,7 +39,7 @@
 /* Titles */
 .title-main {
   font-size: 2.5rem;
-  color: #ffffff;
+  color: #f4c9c9;
   margin-bottom: 10px;
 }
 

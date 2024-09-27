@@ -5,6 +5,7 @@ import githubIcon from '../assets/github.png';
 import codeforcesIcon from '../assets/cf1.png';  
 import resumePdf from '../assets/samia_alam_resume1.pdf'; 
 import '../CSS/Profile.css';
+import '../CSS/style.css';
 
 function Profile() {
   return (
