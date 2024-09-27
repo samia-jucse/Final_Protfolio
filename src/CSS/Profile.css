@@ -16,12 +16,12 @@
 /* Profile Box 1 (Profile Image and Info) */
 .profile-box {
   flex: 1;
+  border-radius: 80px 10px 80px 10px;
   min-width: 250px;
   max-width: 400px;
   height: 510px;
   padding: 20px;
-  background-color: #27696f;
-  border-radius: 10px;
+  background-color: #157881;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   text-align: center;
 }

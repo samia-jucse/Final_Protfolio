@@ -2,7 +2,7 @@ import React from 'react';
 import profileImg from '../assets/profile.jpg'; 
 import linkedinIcon from '../assets/linkedin.png'; 
 import githubIcon from '../assets/github.png'; 
-import codeforcesIcon from '../assets/cf1.png';  // Import the Codeforces logo
+import codeforcesIcon from '../assets/cf1.png';  
 import resumePdf from '../assets/samia_alam_resume1.pdf'; 
 import '../CSS/Profile.css';
 
@@ -11,9 +11,7 @@ function Profile() {
     <section id="profile">
       <div className="profile-container">
         
-        {/* First Profile Box */}
         <div className="profile-box">
-          {/* Profile Picture */}
           <div className="section__pic-container">
             <img src={profileImg} alt="profile" />
           </div>

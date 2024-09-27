@@ -1,4 +1,10 @@
 import React from 'react';
+import '../CSS/style.css';
+import '../CSS/Navbar.css';
+
+
+
+
 
 function NavBar({ setActiveSection, activeSection }) {
   const handleNavClick = (section) => {
